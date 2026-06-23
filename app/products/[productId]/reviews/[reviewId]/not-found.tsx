@@ -1,11 +1,11 @@
 "use client"
 import { usePathname } from "next/navigation"
-export default function NotFound(){
-    const pathname = usePathname()
-    const productId = pathname.split("/")[2]
-    const reviewId = pathname.split("/")[4]
 
+export default function NotFound(){
+    const pathName = usePathname()
+    const productId = pathName.split("/")[2]
+    const reviewId = pathName.split("/")[4]
     return <div>
-        <h2>Review {reviewId} not found for product {productId}</h2>
+        {reviewId} Review not found and {productId} not found
     </div>
 }

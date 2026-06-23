@@ -1,6 +1,5 @@
-export default function PrivateRouter(){
-
+export default function Private(){
     return <div>
-        Private Router
+        hi
     </div>
 }
